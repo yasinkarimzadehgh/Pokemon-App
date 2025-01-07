@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63%;
+  /* 1rem = 10px */
+}
+
+body {
+  padding: 5rem;
+  font-family: 'Nunito', sans-serif;
+  background:
+    linear-gradient(135deg, rgba(185, 190, 181, 0.1) 25%, transparent 25%) -17px 0/34px 34px,
+    linear-gradient(225deg, rgba(185, 190, 181, 0.1) 25%, transparent 25%) -17px 0/34px 34px,
+    linear-gradient(315deg, rgba(185, 190, 181, 0.1) 25%, transparent 25%) 0px 0/34px 34px,
+    linear-gradient(45deg, rgba(185, 190, 181, 0.1) 25%, rgba(229, 229, 247, 0.8) 25%) 0px 0/34px 34px;
+  background-size: 68px 68px;
+  animation: moveBackground 50s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}

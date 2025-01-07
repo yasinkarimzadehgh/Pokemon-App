@@ -1,0 +1,148 @@
+/* Main container styling */
+.ability-detail-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Coming soon message container */
+.coming-soon-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header section styling */
+.ability-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    background-color: #b9beb5;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+        rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+/* Ability name styling */
+.ability-name {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Navigation buttons container */
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Common button styles */
+.back-button,
+.prev-button,
+.next-button {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Button hover effects */
+.back-button:hover,
+.prev-button:hover,
+.next-button:hover {
+    background-color: #f0eded;
+}
+
+/* Pokemon list title */
+.pokemon-list-title {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Pokemon table styling */
+.pokemon-table {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Table cell styling */
+.pokemon-table th,
+.pokemon-table td {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Table header styling */
+.pokemon-table th {
+    background-color: #66686b;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Table data cell styling */
+.pokemon-table td {
+    font-size: 1.3rem;
+}
+
+/* First column styling */
+.pokemon-table td:first-child {
+    background-color: #c1c5c7;
+}
+
+/* Alternating row colors */
+.pokemon-table tr:nth-child(even) {
+    background-color: #ece9e9;
+}
+
+.pokemon-table tr:nth-child(odd) {
+    background-color: #ddd6d6;
+}
+
+/* Row hover effects */
+.pokemon-table tr:hover {
+    background-color: #a19393;
+}
+
+.pokemon-table tr:hover td:first-child {
+    background-color: #a19393 !important;
+}
+
+/* Pokemon sprite image styling */
+.pokemon-sprite {
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+        rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+/* Sprite hover animation */
+.pokemon-sprite:hover {
+    animation: tada;
+    animation-duration: 0.5s;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .pokemon-sprite {
+        border-radius: 50%;
+    }
+}
